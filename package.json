@@ -1,0 +1,14 @@
+{
+  "name": "redis-queue",
+  "version": "1.0.0",
+  "description": "Message Queue based on redis,which support for publishing, subscriptions and priority queue.You can also control the execution speed of the queue task. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lh",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}
