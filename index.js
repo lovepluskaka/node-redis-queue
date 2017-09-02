@@ -97,12 +97,88 @@ const redis = require('redis');
    }
 
   //  订阅发布模式，一旦客户端进入订阅状态,客户端就只可接受订阅相关的命令SUBSCRIBE、PSUBSCRIBE、UNSUBSCRIBE和PUNSUBSCRIBE除了这些命令，其他命令一律失效。
-   sub(){
-
+   onsub(channel,cb){
+        if(!channel||typeof channel != "string"){
+            if(cb && typeof cb  === "function"){
+                return cb('Please enter the current type of cannel name!')
+            }else{
+                return new Promise((resolve,reject)=>{
+                    reject('Please enter the current type of cannel name!');
+                })
+            }
+        }
+        return new Promise((resolve,reject)=>{
+           this.cli.on("subscribe",(channel, count)=>{
+                ( cb && typeof cb  === "function" ) && cb(channel, count);
+                resolve(channel, count);
+           })
+        })
    }
 
-   pub(){
+   sub(channel,cb){
+      if(!channel||typeof channel != "string"){
+          if(cb && typeof cb  === "function"){
+              return cb('Please enter the current type of cannel name!')
+          }else{
+              return new Promise((resolve,reject)=>{
+                  reject('Please enter the current type of cannel name!');
+              })
+          }
+      }
+      return new Promise((resolve,reject)=>{
+        this.cli.subscribe(channel);
+      })
+   }
 
+   pub(channel,message,cb){
+      if( !channel || typeof channel != "string" || typeof message === "undefined"){
+            if(cb && typeof cb  === "function"){
+                return cb('Please enter the correct cannel name!')
+            }else{
+                return new Promise((resolve,reject)=>{
+                    reject('Please enter the correct cannel name!');
+                })
+            }
+      }
+      return new Promise((resolve,reject)=>{
+          this.cli.publish(channel,message);
+      })
+   }
+
+   onpub(channel,cb){
+      if( !channel || typeof channel != "string" ){
+        if(cb && typeof cb  === "function"){
+            return cb('Please enter the correct cannel name!')
+        }else{
+            return new Promise((resolve,reject)=>{
+                reject('Please enter the correct cannel name!');
+            })
+        }
+      }
+      return new Promise((resolve,reject)=>{
+            this.cli.on("psubscribe",(channel, count)=>{
+                ( cb && typeof cb  === "function" ) && cb(channel, count);
+                resolve(channel, count);
+            })
+      })
+   }
+
+   message(channel,cb){
+        if( !channel || typeof channel != "string" ){
+            if(cb && typeof cb  === "function"){
+                return cb('Please enter the correct cannel name!')
+            }else{
+                return new Promise((resolve,reject)=>{
+                    reject('Please enter the correct cannel name!');
+                })
+            }
+        }
+        return new Promise((resolve,reject)=>{
+            this.cli.on("message",(channel, message)=>{
+                ( cb && typeof cb  === "function" ) && cb(channel, message);
+                    resolve(channel, message);
+            })
+      })
    }
 
    quit (){
