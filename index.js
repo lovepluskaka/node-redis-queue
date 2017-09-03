@@ -97,16 +97,7 @@ const redis = require('redis');
    }
 
   //  订阅发布模式，一旦客户端进入订阅状态,客户端就只可接受订阅相关的命令SUBSCRIBE、PSUBSCRIBE、UNSUBSCRIBE和PUNSUBSCRIBE除了这些命令，其他命令一律失效。
-   onsub(channel,cb){
-        if(!channel||typeof channel != "string"){
-            if(cb && typeof cb  === "function"){
-                return cb('Please enter the current type of cannel name!')
-            }else{
-                return new Promise((resolve,reject)=>{
-                    reject('Please enter the current type of cannel name!');
-                })
-            }
-        }
+   onsub(cb){
         return new Promise((resolve,reject)=>{
            this.cli.on("subscribe",(channel, count)=>{
                 ( cb && typeof cb  === "function" ) && cb(channel, count);
@@ -127,6 +118,8 @@ const redis = require('redis');
       }
       return new Promise((resolve,reject)=>{
         this.cli.subscribe(channel);
+        ( cb && typeof cb  === "function" ) && cb();
+        resolve(channel);
       })
    }
 
@@ -142,19 +135,12 @@ const redis = require('redis');
       }
       return new Promise((resolve,reject)=>{
           this.cli.publish(channel,message);
+          ( cb && typeof cb  === "function" ) && cb();
+          resolve(channel);
       })
    }
 
-   onpub(channel,cb){
-      if( !channel || typeof channel != "string" ){
-        if(cb && typeof cb  === "function"){
-            return cb('Please enter the correct cannel name!')
-        }else{
-            return new Promise((resolve,reject)=>{
-                reject('Please enter the correct cannel name!');
-            })
-        }
-      }
+   onpub(cb){
       return new Promise((resolve,reject)=>{
             this.cli.on("psubscribe",(channel, count)=>{
                 ( cb && typeof cb  === "function" ) && cb(channel, count);
@@ -163,16 +149,7 @@ const redis = require('redis');
       })
    }
 
-   message(channel,cb){
-        if( !channel || typeof channel != "string" ){
-            if(cb && typeof cb  === "function"){
-                return cb('Please enter the correct cannel name!')
-            }else{
-                return new Promise((resolve,reject)=>{
-                    reject('Please enter the correct cannel name!');
-                })
-            }
-        }
+   message(cb){
         return new Promise((resolve,reject)=>{
             this.cli.on("message",(channel, message)=>{
                 ( cb && typeof cb  === "function" ) && cb(channel, message);
