@@ -100,8 +100,9 @@ const redis = require('redis');
    onsub(cb){
         return new Promise((resolve,reject)=>{
            this.cli.on("subscribe",(channel, count)=>{
-                ( cb && typeof cb  === "function" ) && cb(channel, count);
-                resolve(channel, count);
+            let obj = {channel:channel,count:count};
+            ( cb && typeof cb  === "function" ) && cb(obj);
+            resolve(obj);
            })
         })
    }
@@ -133,27 +134,24 @@ const redis = require('redis');
                 })
             }
       }
-      return new Promise((resolve,reject)=>{
-          this.cli.publish(channel,message);
-          ( cb && typeof cb  === "function" ) && cb();
-          resolve(channel);
-      })
+     this.cli.publish(channel,message);
    }
 
-   onpub(cb){
-      return new Promise((resolve,reject)=>{
-            this.cli.on("psubscribe",(channel, count)=>{
-                ( cb && typeof cb  === "function" ) && cb(channel, count);
-                resolve(channel, count);
-            })
-      })
-   }
+//    onpub(cb){
+//       return new Promise((resolve,reject)=>{
+//             this.cli.on("psubscribe",(channel, count)=>{
+//                 ( cb && typeof cb  === "function" ) && cb(channel, count);
+//                 resolve(channel, count);
+//             })
+//       })
+//    }
 
    message(cb){
         return new Promise((resolve,reject)=>{
             this.cli.on("message",(channel, message)=>{
-                ( cb && typeof cb  === "function" ) && cb(channel, message);
-                    resolve(channel, message);
+                let obj = {channel:channel,message:message};
+                ( cb && typeof cb  === "function" ) && cb(obj);
+                resolve(obj);
             })
       })
    }
