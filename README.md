@@ -49,15 +49,15 @@ client.quit();//关闭客户端
 
 **配置文件：**
 
-```host```：redis的主机名称，默认：127.0.0.1
+``host``：redis的主机名称，默认：127.0.0.1
 
-```port```：redis监听的端口号,默认：6379
+``port``：redis监听的端口号,默认：6379
 
-```db```：选择的数据库编号,默认：0
+``db``：选择的数据库编号,默认：0
 
-```password```：进行redis权限验证的密码
+``password``：进行redis权限验证的密码
 
-```redis```：可传入已经初始化的客户端，非必需
+``redis``：可传入已经初始化的客户端，非必需
 
 ##### 2.2、redis队列操作
 
@@ -65,11 +65,11 @@ client.quit();//关闭客户端
 
 向队列中添加元素
 
-```list```：所要插入的队列名称，若队列不存在，则创建队列
+``list``：所要插入的队列名称，若队列不存在，则创建队列
 
-```value```：所要插入元素的值，值可以是字符串或数字，也可是数组
+``value``：所要插入元素的值，值可以是字符串或数字，也可是数组
 
-```cb```回调函数，非必需，参数为(error,count),也可使用promise语法来得到执行完成的结果
+``cb``回调函数，非必需，参数为(error,count),也可使用promise语法来得到执行完成的结果
 
 ```
 client.add('list0',[1,2,3]).then(function(count){
@@ -84,11 +84,11 @@ client.add('list0',[1,2,3]).then(function(count){
 
 开启子进程，从队列中获取一个元素，若队列为空，则阻塞连接，直到下一个```add```指令向队列中添加元素。
 
-```list```：队列名称、数据类型是数组,如```[list0,list1,list2]```，该方法会调用redis的blpop方法，队列的优先级为list0>list1>list2。
+``list``：队列名称、数据类型是数组,如```[list0,list1,list2]```，该方法会调用redis的blpop方法，队列的优先级为list0>list1>list2。
 
-```timeout```：阻塞的最大时长,当队列为空，引起客户端阻塞，若经过了指定延时时间还是没有向某个队列中插入元素，则客户端会解除指定的timeout状态并且返回null。
+``timeout``：阻塞的最大时长,当队列为空，引起客户端阻塞，若经过了指定延时时间还是没有向某个队列中插入元素，则客户端会解除指定的timeout状态并且返回null。
 
-```cb```：回调函数，非必需，且回调支持promise语法参数为(error,result),若发生错误，则返回错误原因。通常情况下result为数组，格式为[list,value]，若队列为空并且设置timeout参数，则返回的值为null。
+``cb``：回调函数，非必需，且回调支持promise语法参数为(error,result),若发生错误，则返回错误原因。通常情况下result为数组，格式为[list,value]，若队列为空并且设置timeout参数，则返回的值为null。
 
 若不想使用
 
@@ -96,7 +96,7 @@ client.add('list0',[1,2,3]).then(function(count){
 
 从队列中取出多个参数,具体的使用方式同上。
 
-```limit```：每次从队列中取出的元素数量。
+``limit``：每次从队列中取出的元素数量。
 
 该方法是基于redis**MULTI / EXEC**流水线事务的，在事务被执行时，整个连接是被阻塞的，这就阻止了其他客户端执行push操作，因此，shiftMany方法会在list为空的时候返回一个null值，这和超时(timeout)的时候一摸一样。
 
@@ -116,11 +116,11 @@ client.shiftMany(["list0","list1"],3,2).then(function(result){
 
 订阅状态的事件监听
 
-```type```：需要的监听事件，目前该模块支持的事件类型有以下几种：```subscribe```、```psubscribe```、```unsubscribe```
+``type``：需要的监听事件，目前该模块支持的事件类型有以下几种：```subscribe```、```psubscribe```、```unsubscribe```
 
-如有需求，客户端还可支持频道名模糊匹配的```psubscribe```和```punsubscribe```的方法。
+如有需求，客户端还可支持频道名模糊匹配的``psubscribe``和``punsubscribe``的方法。
 
-```cb```：回调函数，该参数为必需，因为Promise的resolve方法只可执行一次，所以改方法不支持promise语法。参数为(error,{channel:value,count:number})
+``cb``：回调函数，该参数为必需，因为Promise的resolve方法只可执行一次，所以改方法不支持promise语法。参数为(error,{channel:value,count:number})
 
 ###### 2.3.2、message(cb)
 
@@ -130,9 +130,9 @@ client.shiftMany(["list0","list1"],3,2).then(function(result){
 
 订阅频道
 
-```channel```：需要订阅的频道。
+``channel``：需要订阅的频道。
 
-```cb```：回调函数，主要用来返回参数验证错误的信息，因为JS异步的的原因，使用```on```方法监听subscribe事件。
+``cb``：回调函数，主要用来返回参数验证错误的信息，因为JS异步的的原因，使用```on```方法监听subscribe事件。
 
 ###### 2.3.4、pub(channel,message,cb)
 
@@ -140,9 +140,9 @@ client.shiftMany(["list0","list1"],3,2).then(function(result){
 
 ``channel``：发布消息的频道。
 
-```message```：发布的消息内容。
+``message``：发布的消息内容。
 
-```cb```：同```sub```,监听```psubscribe```事件，推荐使用``message``方法。
+``cb``：同``sub``,监听``psubscribe``事件，推荐使用``message``方法。
 
 ###### 2.3.5、unsub(channel,cb)
 
