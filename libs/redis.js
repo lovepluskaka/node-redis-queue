@@ -115,7 +115,7 @@ class queue{
        }
        this.cli.on("message",(channel, message)=>{
            let obj = {channel:channel,message:message};
-           cb(null,obj)
+           cb(null,obj);
        })
    }
 
@@ -132,7 +132,7 @@ class queue{
      return new Promise((resolve,reject)=>{
        this.cli.subscribe(channel);
        ( cb && typeof cb  === "function" ) && cb();
-       resolve(channel);
+       resolve();
      })
   }
 
@@ -146,11 +146,15 @@ class queue{
                })
            }
      }
-    this.cli.publish(channel,message);
+    return new Promise((resolve,reject)=>{
+       this.cli.publish(channel,message);
+       ( cb && typeof cb  === "function" ) && cb();
+       resolve();
+    })
   }
 
   unsub(channel,cb){
-       if(!channel || (typeof channel != 'string' && ! Array.isArray(channel))){
+       if(typeof channel === "undefined" || (typeof channel != 'string' && ! Array.isArray(channel))){
            if(cb && typeof cb === "function"){
                return cb('Please enter the correct cannel name,the cannel format is string or array');
            }

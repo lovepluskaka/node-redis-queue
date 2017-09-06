@@ -6,7 +6,6 @@ class async{
       let count = limit;
       let Arr = arr;
       let Len = Arr.length;
-      // let iterateeCallback = method;
       let running = 0;//正在运行的程序数量
       let index = 0;//数组元素的索引
       let done = false;//所有程序是否执行完成
