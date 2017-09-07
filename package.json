@@ -1,12 +1,15 @@
 {
-  "name": "redis-queue",
-  "version": "1.0.0",
+  "name": "node-redis-queue-lh",
+  "version": "1.0.5",
   "description": "Message Queue based on redis,which support for publishing, subscriptions and priority queue.You can also control the execution speed of the queue task. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "lh",
+  "keywords":[
+     "redis-queue","redis","queue",""
+  ],
+  "author": "lovepluskaka <807373018@qq.com>",
   "license": "ISC",
   "dependencies": {
     "redis": "^2.8.0"

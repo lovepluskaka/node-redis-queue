@@ -1,5 +1,5 @@
 # T立方消息队列模块
-
+安装：``npm install node-redis-queue-lh``
 ### 1、async异步模块
 
 #####  1.1、eachLimit(coll, limit, iteratee, callback)
@@ -9,7 +9,7 @@
 **demo：**
 
 ```js
-let Async = require('./index').async;
+let Async = require('node-redis-queue-lh').async;
 let async = new Async();
 async.eachLimit([1,4,2,3,5],2,function(item,index,callback){
   setTimeout(function(){
@@ -40,7 +40,7 @@ index is  4
 ##### 2.1、初始化redis客户端、关闭客户端
 
 ```javascript
-let queue = require('./index').queue;
+let queue = require('node-redis-queue-lh').queue;
 let options = {db:3};
 let client = new queue(options);
 
