@@ -1,0 +1,449 @@
+[2017-08-15 10:37:39.592] [ERROR] info - ::ffff:127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:2002/apis" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:51:58.169] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api-json HTTP/1.1" 404 147 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:52:15.411] [ERROR] info - ::ffff:127.0.0.1 - - "GET /permission HTTP/1.1" 404 149 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:52:17.342] [ERROR] info - ::ffff:127.0.0.1 - - "GET /permissions HTTP/1.1" 404 150 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:53:00.160] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 10:53:00.174] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/permissions HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:53:31.579] [ERROR] console - { OAuth2Error: Method must be POST with application/x-www-form-urlencoded encoding
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Grant.extractCredentials (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Grant (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:57:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:88:5
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:131:14)
+  name: 'OAuth2Error',
+  message: 'Method must be POST with application/x-www-form-urlencoded encoding',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'Method must be POST with application/x-www-form-urlencoded encoding' }
+[2017-08-15 10:53:31.585] [ERROR] info - ::ffff:127.0.0.1 - - "POST /oauth/token HTTP/1.1" 400 128 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:56:48.763] [ERROR] console - { OAuth2Error: Missing client_secret parameter
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Grant.extractCredentials (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:89:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Grant (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:57:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:88:5
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:131:14)
+  name: 'OAuth2Error',
+  message: 'Missing client_secret parameter',
+  headers: 
+   { 'Cache-Control': 'no-store',
+     Pragma: 'no-cache',
+     'WWW-Authenticate': 'Basic realm="Service"' },
+  code: 400,
+  error: 'invalid_client',
+  error_description: 'Missing client_secret parameter' }
+[2017-08-15 10:56:48.770] [ERROR] info - ::ffff:127.0.0.1 - - "POST /oauth/token HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:58:26.181] [ERROR] console - { OAuth2Error: Missing client_secret parameter
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Grant.extractCredentials (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:89:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Grant (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:57:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:88:5
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:137:13)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:131:14)
+    at next (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/route.js:131:14)
+  name: 'OAuth2Error',
+  message: 'Missing client_secret parameter',
+  headers: 
+   { 'Cache-Control': 'no-store',
+     Pragma: 'no-cache',
+     'WWW-Authenticate': 'Basic realm="Service"' },
+  code: 400,
+  error: 'invalid_client',
+  error_description: 'Missing client_secret parameter' }
+[2017-08-15 10:58:26.187] [ERROR] info - ::ffff:127.0.0.1 - - "POST /oauth/token HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 10:58:36.905] [ERROR] console - { OAuth2Error: User credentials are invalid
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:228:19
+    at mongo.findOne.then (/Users/linhong/WebstormProjects/tlf-cp-api/lib/oauth2-model.js:135:18)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+  name: 'OAuth2Error',
+  message: 'User credentials are invalid',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_grant',
+  error_description: 'User credentials are invalid' }
+[2017-08-15 10:58:36.929] [ERROR] info - ::ffff:127.0.0.1 - - "POST /oauth/token HTTP/1.1" 400 87 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 11:01:45.560] [ERROR] console - { OAuth2Error: User credentials are invalid
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:228:19
+    at mongo.findOne.then (/Users/linhong/WebstormProjects/tlf-cp-api/lib/oauth2-model.js:135:18)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+  name: 'OAuth2Error',
+  message: 'User credentials are invalid',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_grant',
+  error_description: 'User credentials are invalid' }
+[2017-08-15 11:01:45.565] [ERROR] info - ::ffff:127.0.0.1 - - "POST /oauth/token HTTP/1.1" 400 87 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 11:05:22.065] [ERROR] console - { OAuth2Error: User credentials are invalid
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:228:19
+    at mongo.findOne.then (/Users/linhong/WebstormProjects/tlf-cp-api/lib/oauth2-model.js:135:18)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+  name: 'OAuth2Error',
+  message: 'User credentials are invalid',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_grant',
+  error_description: 'User credentials are invalid' }
+[2017-08-15 11:05:22.070] [ERROR] info - ::ffff:127.0.0.1 - - "POST /oauth/token HTTP/1.1" 400 87 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 11:07:18.098] [ERROR] console - { OAuth2Error: User credentials are invalid
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/grant.js:228:19
+    at mongo.findOne.then (/Users/linhong/WebstormProjects/tlf-cp-api/lib/oauth2-model.js:136:18)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+  name: 'OAuth2Error',
+  message: 'User credentials are invalid',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_grant',
+  error_description: 'User credentials are invalid' }
+[2017-08-15 11:07:18.113] [ERROR] info - ::ffff:127.0.0.1 - - "POST /oauth/token HTTP/1.1" 400 87 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:28:06.121] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest HTTP/1.1" 404 149 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:29:10.016] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:29:10.032] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:47:28.275] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:47:28.298] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/example/id/1 HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:47:58.608] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:47:58.617] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/info/1 HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:48:05.690] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:48:05.695] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/info/2 HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:48:07.099] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:48:07.102] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/info/3 HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:48:08.327] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:48:08.341] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/info/4 HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:48:09.587] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:48:09.591] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/info/5 HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:48:11.884] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:48:11.890] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/info/10 HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:50:29.431] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:50:29.437] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/test/example/test/getrpc HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:52:39.158] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:52:39.163] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/test/example/test/getrpc HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:52:40.529] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:52:40.533] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/test/example/test/getrpc HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:53:39.749] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:53:39.754] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/test/example/test/getcode HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:54:09.781] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:54:09.794] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/test/example/test/getcode HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 15:57:16.557] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 15:57:16.562] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest/mytest/mytest HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 17:01:38.623] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 17:01:38.642] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest/mytest/mytest HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 17:01:39.491] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 17:01:39.499] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest/mytest/mytest HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 17:02:18.249] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-08-15 17:02:18.255] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest/mytest/mytest HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 17:03:00.399] [ERROR] console - { ss: 'ddd',
+  code: 500,
+  error: 'internel_server_error',
+  error_description: 'unknow error' }
+[2017-08-15 17:03:00.401] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest/mytest/mytest HTTP/1.1" 500 79 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 17:03:36.873] [ERROR] console - { ss: 'ddd',
+  code: 500,
+  error: 'internel_server_error',
+  error_description: 'unknow error' }
+[2017-08-15 17:03:36.877] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest/mytest/mytest HTTP/1.1" 500 79 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 17:05:30.850] [ERROR] info - ::ffff:127.0.0.1 - - "GET /api/mytest/mytest/mytest HTTP/1.1" 404 163 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+[2017-08-15 17:35:03.634] [ERROR] info - ::ffff:127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:2002/apis" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"

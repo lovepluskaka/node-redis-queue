@@ -1,0 +1,243 @@
+[2017-09-07 15:55:59.746] [INFO] console - ADMIN_GET_LIST
+[2017-09-07 15:55:59.750] [INFO] console - PERMISSIONS_GROUP_GET_LIST
+[2017-09-07 15:55:59.752] [INFO] console - PERMISSIONS_CHANGE_ADMIN
+[2017-09-07 15:55:59.753] [INFO] console - ADMIN_GET_INFO
+[2017-09-07 15:55:59.754] [INFO] console - ADMIN_CREATE
+[2017-09-07 15:55:59.755] [INFO] console - ADMIN_DELETE
+[2017-09-07 15:55:59.756] [INFO] console - ADMIN_INFO_UPDATE
+[2017-09-07 15:55:59.757] [INFO] console - PERMISSIONS_GROUP_CREATE
+[2017-09-07 15:55:59.758] [INFO] console - PERMISSIONS_GROUP_GET
+[2017-09-07 15:55:59.759] [INFO] console - PERMISSIONS_GROUP_DELETE
+[2017-09-07 15:55:59.760] [INFO] console - DEPARTMENT_DELETE
+[2017-09-07 15:55:59.760] [INFO] console - DEPARTMENT_CREATE
+[2017-09-07 15:55:59.761] [INFO] console - PERMISSIONS_GRANT_TO_ADMIN
+[2017-09-07 15:55:59.762] [INFO] console - PERMISSIONS_GROUP_CHANGE
+[2017-09-07 15:55:59.762] [INFO] console - ORDER_INVOICE_GET_LIST
+[2017-09-07 15:55:59.764] [INFO] console - ACCOUNT_GET_LIST
+[2017-09-07 15:55:59.774] [INFO] console - QRCODE_GET_LIST
+[2017-09-07 15:55:59.775] [INFO] console - VERIFY_COMPANY_GET_LIST
+[2017-09-07 15:55:59.776] [INFO] console - ORDER_INVOICE_GET_DETAIL
+[2017-09-07 15:55:59.777] [INFO] console - COMPANY_GET_LIST
+[2017-09-07 15:55:59.778] [INFO] console - COMPANY_GET_INFO
+[2017-09-07 15:55:59.779] [INFO] console - COMPANY_GET_DETAIL_MEMBER
+[2017-09-07 15:55:59.779] [INFO] console - COMPANY_UPDATE_INFO
+[2017-09-07 15:55:59.780] [INFO] console - FILE_UPLOAD
+[2017-09-07 15:55:59.780] [INFO] console - DELETE_FILE
+[2017-09-07 15:55:59.781] [INFO] console - FILE_BATCH_UPLOAD
+[2017-09-07 15:55:59.782] [INFO] console - COMPANY_DELETE
+[2017-09-07 15:55:59.782] [INFO] console - ADMIN_ACCESS_RECORD_GET_LIST
+[2017-09-07 15:55:59.783] [INFO] console - ACCOUNT_GET_FULL_INFO
+[2017-09-07 15:55:59.783] [INFO] console - ACCOUNT_GET_PROJECT
+[2017-09-07 15:55:59.784] [INFO] console - ACCOUNT_GET_DETAIL
+[2017-09-07 15:55:59.785] [INFO] console - ACCOUNT_GET_COMPANY
+[2017-09-07 15:55:59.786] [INFO] console - ACCOUNT_UPDATE_STATE
+[2017-09-07 15:55:59.788] [INFO] console - QRCODE_GET_DETAIL_CUSTOMERS
+[2017-09-07 15:55:59.788] [INFO] console - QRCODE_UPDATE
+[2017-09-07 15:55:59.789] [INFO] console - QRCODE_UPDATE_STATE
+[2017-09-07 15:55:59.789] [INFO] console - QRCODE_CREATE
+[2017-09-07 15:55:59.790] [INFO] console - QRCODE_GET_DETAIL
+[2017-09-07 15:55:59.791] [INFO] console - VERIFY_COMPANY_INFO_UPDATE
+[2017-09-07 15:55:59.792] [INFO] console - VERIFY_COMPANY_GET_DETAIL
+[2017-09-07 15:55:59.792] [INFO] console - COMPANY_CHANGE_STATE
+[2017-09-07 15:55:59.794] [INFO] console - COMPANY_GET_DETAIL
+[2017-09-07 15:55:59.795] [INFO] console - COMPANY_GET_DETAIL_PROJECT
+[2017-09-07 15:55:59.795] [INFO] console - COMPANY_PLAN_DISCOUNT_UPDATE
+[2017-09-07 15:55:59.800] [INFO] console - COMPANY_PLAN_RECHARGE_DISCOUNT_GET_LIST
+[2017-09-07 15:55:59.802] [INFO] console - COMPANY_PLAN_RECHARGE_DISCOUNT_CREATE
+[2017-09-07 15:55:59.802] [INFO] console - COMPANY_PLAN_RECHARGE_DISCOUNT_DELETE
+[2017-09-07 15:55:59.803] [INFO] console - COMPANY_PLAN_RECHARGE_DISCOUNT_GET_DETAIL
+[2017-09-07 15:55:59.803] [INFO] console - COMPANY_PLAN_DISCOUNT_DELETE
+[2017-09-07 15:55:59.804] [INFO] console - COMPANY_PLAN_DISCOUNT_CREATE
+[2017-09-07 15:55:59.804] [INFO] console - COMPANY_PLAN_RECHARGE_DISCOUNT_UPDATE
+[2017-09-07 15:55:59.805] [INFO] console - COMPANY_PLAN_DISCOUNT_GET_DETAIL
+[2017-09-07 15:55:59.805] [INFO] console - COMPANY_PLAN_COUNPON_DELETE_PRODUCT
+[2017-09-07 15:55:59.806] [INFO] console - COMPANY_PLAN_COUPON_UPDATE
+[2017-09-07 15:55:59.806] [INFO] console - COMPANY_PLAN_COUNPON_ADD_PRODUCT
+[2017-09-07 15:55:59.807] [INFO] console - COMPANY_PLAN_COUNPON_ADD_TO_COMPANY
+[2017-09-07 15:55:59.808] [INFO] console - COMPANY_PLAN_DISCOUNT_GET_LIST
+[2017-09-07 15:55:59.809] [INFO] console - COMPANY_PLAN_COUPON_CREATE
+[2017-09-07 15:55:59.810] [INFO] console - COMPANY_PLAN_COUPON_GET_COMPANY_LIST
+[2017-09-07 15:55:59.810] [INFO] console - COMPANY_PLAN_COUPON_GET_LIST
+[2017-09-07 15:55:59.811] [INFO] console - COMPANY_PLAN_USAGE_GET_LIST
+[2017-09-07 15:55:59.812] [INFO] console - COMPANY_PLAN_PRIDUCT_DISCOUNT_DELETE
+[2017-09-07 15:55:59.813] [INFO] console - COMPANY_PLAN_PRODUCT_UPDATE
+[2017-09-07 15:55:59.815] [INFO] console - COMPANY_PLAN_PRODUCT_GET_LIST
+[2017-09-07 15:55:59.815] [INFO] console - COMPANY_PLAN_PRODUCT_GET_DETAIL
+[2017-09-07 15:55:59.817] [INFO] console - COMPANY_PLAN_PRIDUCT_DISCOUNT_ADD
+[2017-09-07 15:55:59.818] [INFO] console - COMPANT_PLAN_TYPE_GET_LIST
+[2017-09-07 15:55:59.819] [INFO] console - COMPANY_PLAN_TYPE_UPDATE
+[2017-09-07 15:55:59.820] [INFO] console - COMPANY_PLAN_USAGE_GET_DETAIL
+[2017-09-07 15:55:59.820] [INFO] console - COMPANY_PLAN_COUPON_GET_DETAIL
+[2017-09-07 15:55:59.821] [INFO] console - COMPANY_PLAN_TYPE_GET_DETAIL
+[2017-09-07 15:55:59.821] [INFO] console - COMPANY_PLAN_COUPON_DELETE
+[2017-09-07 15:55:59.822] [INFO] console - ORDER_INVOICE_UPDATE_STATUS_CONFIRMED
+[2017-09-07 15:55:59.822] [INFO] console - ORDER_INVOICE_SEND
+[2017-09-07 15:55:59.823] [INFO] console - ORDER_INVOICE_UPDATE_STATUS_ISSUED
+[2017-09-07 15:55:59.828] [INFO] console - ORDER_INVOICE_UPDATE_STATUS_COMPLETED
+[2017-09-07 15:55:59.829] [INFO] console - ORDER_INVOICE_UPDATE_STATUS_REJECTED
+[2017-09-07 15:55:59.830] [INFO] console - COMPANY_PLAN_PRODUCE_GET_HISTORY_VERSION
+[2017-09-07 15:55:59.830] [INFO] console - COMNAY_GET_LIST_WITH_COUPON
+[2017-09-07 15:55:59.831] [INFO] console - COMPANY_PLAN_COUPONS_ADD_TO_COMPANIES
+[2017-09-07 15:55:59.832] [INFO] console - COMPANY_PLAN_ONE_COUPON_ADD_TO_COMPANIES
+[2017-09-07 15:55:59.832] [INFO] console - COMPANY_PLAN_ONE_COUPON_ADD_TO_USERS
+[2017-09-07 15:55:59.833] [INFO] console - ORDER_GET_LIST
+[2017-09-07 15:55:59.834] [INFO] console - ORDER_GET_DETAIL
+[2017-09-07 15:55:59.834] [INFO] console - BROADCAST_CREATE
+[2017-09-07 15:55:59.835] [INFO] console - BROADCAST_GET_LIST
+[2017-09-07 15:55:59.836] [INFO] console - BROADCAST_GET_DETAIL
+[2017-09-07 15:55:59.836] [INFO] console - BROADCAST_UPDATE
+[2017-09-07 15:56:01.103] [INFO] console - post 	 /api/activity/event
+[2017-09-07 15:56:01.104] [INFO] console - get 	 /api/activity/event/:_id
+[2017-09-07 15:56:01.105] [INFO] console - get 	 /api/activity/event
+[2017-09-07 15:56:01.110] [INFO] console - get 	 /api/admin/access/record/list
+[2017-09-07 15:56:01.573] [INFO] console - get 	 /api/admin/info/:_id
+[2017-09-07 15:56:01.574] [INFO] console - get 	 /api/admin/self
+[2017-09-07 15:56:01.574] [INFO] console - get 	 /api/admin/self/permissions
+[2017-09-07 15:56:01.575] [INFO] console - get 	 /api/admin/list
+[2017-09-07 15:56:01.575] [INFO] console - post 	 /api/admin
+[2017-09-07 15:56:01.576] [INFO] console - put 	 /api/admin/self
+[2017-09-07 15:56:01.576] [INFO] console - put 	 /api/admin/password/:_id
+[2017-09-07 15:56:01.577] [INFO] console - put 	 /api/admin/self/password
+[2017-09-07 15:56:01.577] [INFO] console - put 	 /api/admin/info/:_id
+[2017-09-07 15:56:01.578] [INFO] console - delete 	 /api/admin/:_id
+[2017-09-07 15:56:01.581] [INFO] console - post 	 /api/business/account/detail/full/:_id
+[2017-09-07 15:56:01.581] [INFO] console - get 	 /api/business/account/list
+[2017-09-07 15:56:01.582] [INFO] console - get 	 /api/business/account/detail/:_id
+[2017-09-07 15:56:01.582] [INFO] console - get 	 /api/business/account/detail/:_id/company
+[2017-09-07 15:56:01.583] [INFO] console - get 	 /api/business/account/detail/:_id/project
+[2017-09-07 15:56:01.584] [INFO] console - put 	 /api/business/account/freeze/:_id
+[2017-09-07 15:56:01.589] [INFO] console - get 	 /api/business/app-center/app
+[2017-09-07 15:56:01.589] [INFO] console - get 	 /api/business/app-center/app/:app_id
+[2017-09-07 15:56:01.590] [INFO] console - post 	 /api/business/app-center/app/upload
+[2017-09-07 15:56:01.590] [INFO] console - put 	 /api/business/app-center/app/:app_id/status
+[2017-09-07 15:56:01.591] [INFO] console - put 	 /api/business/app-center/app/update/:appid
+[2017-09-07 15:56:01.591] [INFO] console - delete 	 /api/business/app-center/app/delete
+[2017-09-07 15:56:01.593] [INFO] console - get 	 /api/business/app-center/slideshow
+[2017-09-07 15:56:01.594] [INFO] console - get 	 /api/business/app-center/slideshow/:slideshow_id
+[2017-09-07 15:56:01.594] [INFO] console - put 	 /api/business/app-center/slideshow/:slideshow_id/status
+[2017-09-07 15:56:01.594] [INFO] console - post 	 /api/business/app-center/slideshow
+[2017-09-07 15:56:01.595] [INFO] console - delete 	 /api/business/app-center/slideshow/:slideshow_id
+[2017-09-07 15:56:01.604] [INFO] console - post 	 /api/business/broadcast
+[2017-09-07 15:56:01.604] [INFO] console - get 	 /api/business/broadcast/list
+[2017-09-07 15:56:01.605] [INFO] console - get 	 /api/business/broadcast/detail/:broadcast_id
+[2017-09-07 15:56:01.606] [INFO] console - put 	 /api/business/broadcast/:broadcast_id
+[2017-09-07 15:56:01.607] [INFO] console - delete 	 /api/business/broadcast/:broadcast_id
+[2017-09-07 15:56:01.613] [INFO] console - get 	 /api/business/company/list
+[2017-09-07 15:56:01.614] [INFO] console - get 	 /api/business/company/detail/:_id
+[2017-09-07 15:56:01.615] [INFO] console - get 	 /api/business/company/detail/:_id/member
+[2017-09-07 15:56:01.616] [INFO] console - get 	 /api/business/company/detail/:_id/project
+[2017-09-07 15:56:01.617] [INFO] console - put 	 /api/business/company/freeze/:_id
+[2017-09-07 15:56:01.620] [INFO] console - get 	 /api/business/company/plan/auth/list
+[2017-09-07 15:56:01.622] [INFO] console - get 	 /api/business/company/plan/auth/detail/:auth_id
+[2017-09-07 15:56:01.624] [INFO] console - post 	 /api/business/company/plan/auth/audit/:auth_id
+[2017-09-07 15:56:01.632] [INFO] console - get 	 /api/business/company/plan/company/list
+[2017-09-07 15:56:01.633] [INFO] console - get 	 /api/business/company/plan/company/detail/:usage_id
+[2017-09-07 15:56:01.637] [INFO] console - get 	 /api/business/company/plan/coupon/list
+[2017-09-07 15:56:01.637] [INFO] console - get 	 /api/business/company/plan/coupon/detail/:coupon_id
+[2017-09-07 15:56:01.638] [INFO] console - get 	 /api/business/company/plan/coupon/companies/:coupon_no
+[2017-09-07 15:56:01.638] [INFO] console - get 	 /api/business/company/plan/coupon/company/with/coupon
+[2017-09-07 15:56:01.639] [INFO] console - post 	 /api/business/company/plan/coupon
+[2017-09-07 15:56:01.640] [INFO] console - post 	 /api/business/company/plan/coupon/coupon/send
+[2017-09-07 15:56:01.640] [INFO] console - post 	 /api/business/company/plan/coupon/:coupon_no/companies
+[2017-09-07 15:56:01.641] [INFO] console - post 	 /api/business/company/plan/coupon/:coupon_no/users
+[2017-09-07 15:56:01.642] [INFO] console - put 	 /api/business/company/plan/coupon/:coupon_id
+[2017-09-07 15:56:01.644] [INFO] console - delete 	 /api/business/company/plan/coupon/:coupon_id
+[2017-09-07 15:56:01.649] [INFO] console - get 	 /api/business/company/plan/discount/list
+[2017-09-07 15:56:01.649] [INFO] console - get 	 /api/business/company/plan/discount/detail/:discount_id
+[2017-09-07 15:56:01.650] [INFO] console - post 	 /api/business/company/plan/discount
+[2017-09-07 15:56:01.650] [INFO] console - put 	 /api/business/company/plan/discount/:discount_id
+[2017-09-07 15:56:01.651] [INFO] console - delete 	 /api/business/company/plan/discount/:discount_id
+[2017-09-07 15:56:01.656] [INFO] console - get 	 /api/business/company/plan/product/list
+[2017-09-07 15:56:01.657] [INFO] console - get 	 /api/business/company/plan/product/history/:product_id
+[2017-09-07 15:56:01.657] [INFO] console - get 	 /api/business/company/plan/product/detail/:product_id
+[2017-09-07 15:56:01.658] [INFO] console - put 	 /api/business/company/plan/product/:product_id
+[2017-09-07 15:56:01.661] [INFO] console - get 	 /api/business/company/plan/recharge/discount/list
+[2017-09-07 15:56:01.661] [INFO] console - get 	 /api/business/company/plan/recharge/discount/detail/:discount_id
+[2017-09-07 15:56:01.662] [INFO] console - post 	 /api/business/company/plan/recharge/discount
+[2017-09-07 15:56:01.663] [INFO] console - put 	 /api/business/company/plan/recharge/discount/:discount_id
+[2017-09-07 15:56:01.663] [INFO] console - delete 	 /api/business/company/plan/recharge/discount/:discount_id
+[2017-09-07 15:56:01.666] [INFO] console - get 	 /api/business/company/plan/type/list
+[2017-09-07 15:56:01.667] [INFO] console - get 	 /api/business/company/plan/type/detail/:plan_id
+[2017-09-07 15:56:01.668] [INFO] console - put 	 /api/business/company/plan/type/:plan_id
+[2017-09-07 15:56:01.673] [INFO] console - get 	 /api/business/content/qrcode/list
+[2017-09-07 15:56:01.673] [INFO] console - get 	 /api/business/content/qrcode/detail/:_id
+[2017-09-07 15:56:01.673] [INFO] console - get 	 /api/business/content/qrcode/customers/:_id
+[2017-09-07 15:56:01.674] [INFO] console - post 	 /api/business/content/qrcode/create
+[2017-09-07 15:56:01.674] [INFO] console - put 	 /api/business/content/qrcode/:_id
+[2017-09-07 15:56:01.675] [INFO] console - put 	 /api/business/content/qrcode/status/:_id
+[2017-09-07 15:56:01.678] [INFO] console - get 	 /api/business/invoice/list
+[2017-09-07 15:56:01.678] [INFO] console - get 	 /api/business/invoice/detail/:invoice_id
+[2017-09-07 15:56:01.679] [INFO] console - put 	 /api/business/invoice/confirmed/:invoice_id
+[2017-09-07 15:56:01.680] [INFO] console - put 	 /api/business/invoice/rejected/:invoice_id
+[2017-09-07 15:56:01.681] [INFO] console - put 	 /api/business/invoice/issued/:invoice_id
+[2017-09-07 15:56:01.681] [INFO] console - put 	 /api/business/invoice/completed/:invoice_id
+[2017-09-07 15:56:01.682] [INFO] console - put 	 /api/business/invoice/:invoice_id/send
+[2017-09-07 15:56:01.684] [INFO] console - get 	 /api/business/order/list
+[2017-09-07 15:56:01.685] [INFO] console - get 	 /api/business/order/detail/:order_id
+[2017-09-07 15:56:01.687] [INFO] console - get 	 /api/business/order/transfer/list
+[2017-09-07 15:56:01.688] [INFO] console - get 	 /api/business/order/transfer/detail/:transfer_id
+[2017-09-07 15:56:01.688] [INFO] console - post 	 /api/business/order/transfer/confirm
+[2017-09-07 15:56:01.688] [INFO] console - post 	 /api/business/order/transfer/reject
+[2017-09-07 15:56:01.816] [INFO] console - post 	 /api/business/payment/alipay
+[2017-09-07 15:56:01.817] [INFO] console - post 	 /api/business/payment/alipay/notify
+[2017-09-07 15:56:01.818] [INFO] console - get 	 /api/business/payment/alipay
+[2017-09-07 15:56:01.818] [INFO] console - get 	 /api/business/payment/alipay/redirect
+[2017-09-07 15:56:01.821] [INFO] console - post 	 /api/business/payment/order
+[2017-09-07 15:56:02.009] [INFO] console - post 	 /api/face/howold
+[2017-09-07 15:56:02.012] [INFO] console - post 	 /api/files/public
+[2017-09-07 15:56:02.012] [INFO] console - post 	 /api/files/avatar
+[2017-09-07 15:56:02.012] [INFO] console - post 	 /api/files
+[2017-09-07 15:56:02.013] [INFO] console - post 	 /api/files/batch
+[2017-09-07 15:56:02.013] [INFO] console - delete 	 /api/files/:_id
+[2017-09-07 15:56:02.017] [INFO] console - get 	 /api/permission/admin/:_id
+[2017-09-07 15:56:02.018] [INFO] console - post 	 /api/permission/admin/:_id
+[2017-09-07 15:56:02.018] [INFO] console - delete 	 /api/permission/admin/:_id
+[2017-09-07 15:56:02.021] [INFO] console - post 	 /api/permission/grant
+[2017-09-07 15:56:02.022] [INFO] console - put 	 /api/permission/grant
+[2017-09-07 15:56:02.031] [INFO] console - post 	 /api/permission/group
+[2017-09-07 15:56:02.031] [INFO] console - get 	 /api/permission/group/info/:_id
+[2017-09-07 15:56:02.032] [INFO] console - get 	 /api/permission/group/list
+[2017-09-07 15:56:02.032] [INFO] console - put 	 /api/permission/group/:_id
+[2017-09-07 15:56:02.032] [INFO] console - delete 	 /api/permission/group/:_id
+[2017-09-07 15:56:02.041] [INFO] console - get 	 /api/process/list
+[2017-09-07 15:56:02.042] [INFO] console - get 	 /api/process/info/:name
+[2017-09-07 15:56:02.043] [INFO] console - post 	 /api/process/start/:name
+[2017-09-07 15:56:02.043] [INFO] console - post 	 /api/process/restart/:name
+[2017-09-07 15:56:02.044] [INFO] console - post 	 /api/process/stop/:name
+[2017-09-07 15:56:02.046] [INFO] console - get 	 /api/rpc
+[2017-09-07 15:56:02.047] [INFO] console - post 	 /api/rpc/switch/:appid
+[2017-09-07 15:56:02.261] [INFO] console - get 	 /api/test/example/test/id/:id
+[2017-09-07 15:56:02.261] [INFO] console - get 	 /api/test/example/test/testrpc
+[2017-09-07 15:56:02.262] [INFO] console - get 	 /api/test/example/test/getcode
+[2017-09-07 15:56:02.262] [INFO] console - get 	 /api/test/example/test/getrpc
+[2017-09-07 15:56:02.263] [INFO] console - post 	 /api/test/example/test/file
+[2017-09-07 15:56:02.264] [INFO] console - post 	 /api/test/example/test/well/:fsdfsdfsdf
+[2017-09-07 15:56:02.267] [INFO] console - post 	 /api/test/example/test/bad
+[2017-09-07 15:56:02.268] [INFO] console - put 	 /api/test/example/test/:id
+[2017-09-07 15:56:02.271] [INFO] console - post 	 /api/tools/token
+[2017-09-07 15:56:02.272] [INFO] console - get 	 /api/tools/code/image
+[2017-09-07 15:56:02.508] [INFO] console - https service started at 2002: 3158.177ms
+[2017-09-07 15:56:33.232] [INFO] console - >>>>>>>>>>>>>>>: undefined
+[2017-09-07 15:56:34.152] [INFO] info - ::ffff:127.0.0.1 - - "GET /apis HTTP/1.1" 200 238914 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+[2017-09-07 15:56:34.976] [INFO] console - >>>>>>>>>>>>>>>: undefined
+[2017-09-07 15:56:34.984] [ERROR] info - ::ffff:127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:2002/apis" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+[2017-09-07 15:59:38.515] [INFO] console - >>>>>>>>>>>>>>>: null
+[2017-09-07 15:59:38.523] [INFO] console - >>>>>>>>>>>>>>>: null
+[2017-09-07 15:59:38.556] [ERROR] console - { OAuth2Error: The access token was not found
+    at OAuth2Error (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/error.js:30:12)
+    at Authorise.getBearerToken (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:70:17)
+    at run (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:15:14)
+    at runner (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/runner.js:19:5)
+    at new Authorise (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/authorise.js:45:3)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/oauth2-server/lib/oauth2server.js:70:12
+    at /Users/linhong/WebstormProjects/tlf-cp-api/middleware/oauth.mid.js:7:37
+    at Layer.handle [as handle_request] (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:317:13)
+    at /Users/linhong/WebstormProjects/tlf-cp-api/node_modules/express/lib/router/index.js:284:7
+  name: 'OAuth2Error',
+  message: 'The access token was not found',
+  headers: { 'Cache-Control': 'no-store', Pragma: 'no-cache' },
+  code: 400,
+  error: 'invalid_request',
+  error_description: 'The access token was not found' }
+[2017-09-07 15:59:38.563] [ERROR] info - ::ffff:127.0.0.1 - - "POST /api/test/example/test/file HTTP/1.1" 400 91 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
