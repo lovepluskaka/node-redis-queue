@@ -209,6 +209,16 @@ channel is  channel0
 message is  This is message
 ```
 
+### 3、EXAMPLE
+
+##### 3.1、文件传输
+
+本例子使用了队列任务中的``add``和``shift``方法，文件目录为``./example/changeFile``,newfile下old目录为要监听的文件夹，new目录为目标文件夹，若在old文件夹中添加文件，传入任务就会添加到任务队列中，核心代码为``transmitFile``方法。运行方式:
+
+```
+node ./example/changeFile/file.js
+```
+
 
 
 

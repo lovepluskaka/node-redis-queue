@@ -26,7 +26,6 @@ class transmit{
           }
           console.log(data);
           if(data && data.length){
-            // self.pathArray = data;
             self.client.add(self.listName,data).then((count)=>{
                  if(count){
                     self.transmitFile(self.cb);
