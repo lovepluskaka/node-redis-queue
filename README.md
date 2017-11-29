@@ -1,4 +1,4 @@
-# T立方消息队列模块
+# Javascript消息队列模块
 安装：``npm install node-redis-queue-lh``
 ### 1、async异步模块
 
